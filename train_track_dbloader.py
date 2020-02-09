@@ -25,11 +25,11 @@ def data_cleaner(data):
 	time_pack=[datetime.datetime.fromtimestamp(_i).strftime('%Y-%m-%d %H:%M:%S.%f') for _i in time_pack]
 	return '%s' % str(tuple(zip(time_pack, data)))[1:-1]
 
-aws_tt_db = psycopg2.connect(host="tt.cbkrsjasvarv.us-east-1.rds.amazonaws.com",
-			     port="5433",
+aws_tt_db = psycopg2.connect(host="manyregions.amazonaws.com",
+			     port="A FINE PORT!",
 		 	     dbname="train_track_aws",
-			     user="postgres",
-			     password="Coldplay123!")
+			     user="USER!",
+			     password="FOO!")
 db_runner = aws_tt_db.cursor()
 
 port = 8888
